@@ -1,0 +1,266 @@
+/*layout*/
+*{
+    list-style: none;
+}
+:root {
+    --maincolor: #CAF0F8;
+    --maintextcolor: #00B4D8;
+    --secondarycolor: #0096C7;
+    --terciarycolor: #03045E;
+    --tarjetacartelera: #90e0ef;
+}
+
+body {
+    background-color: var(--maincolor);
+    text-align: center;
+
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+header a {
+    color: var(--maintextcolor);
+}
+
+nav ul {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 15px 10px;
+}
+
+nav ul a{
+    color: var(--maintextcolor);
+}
+
+.carousel-inner {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+div div div h5 {
+    color: wheat;
+}
+
+div div div p {
+    color: whitesmoke;
+}
+
+footer {
+    background-color: var(--terciarycolor);
+    color: var(--maintextcolor);
+ }
+footer nav ul {
+    background-color: var(--terciarycolor);
+    }
+
+footer a {
+    color: var(--maintextcolor);
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+/*cartelera*/
+.titulos {
+    margin: 50px 0px;
+}
+.encartelera {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.encartelera .estrenos {
+    background-color: var(--tarjetacartelera);
+    width: 30%;
+    border: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.encartelera .no-estreno {
+    background-color: var(--tarjetacartelera);
+    width: 30%;
+    border: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+
+
+/*cartelera estrenos*/
+.encartelera .estrenos {
+    background-color: var(--tarjetacartelera);
+    width: 30%;
+    border: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+/*cartelera no estrenos*/
+.encartelera .no-estreno {
+    background-color: var(--tarjetacartelera);
+    width: 30%;
+    border: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .encartelera {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+    .encartelera .estrenos {
+        background-color: var(--tarjetacartelera);
+        width: 45%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+    
+    .encartelera .no-estreno {
+        background-color: var(--tarjetacartelera);
+        width: 45%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+    
+} 
+
+@media screen and (max-width: 768px) {
+    .encartelera {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    
+    .encartelera .estrenos {
+        background-color: var(--tarjetacartelera);
+        width: 45%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+    
+    .encartelera .no-estreno {
+        background-color: var(--tarjetacartelera);
+        width: 45%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+    
+    div article img {
+        max-width: 160px;
+    }
+} 
+
+@media screen and (max-width: 425px) {
+    
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+    
+    header a {
+        color: var(--maintextcolor);
+    }
+    
+    nav ul {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px 15px 10px;
+    }
+    
+    div article img {
+        max-width: 250px;
+    }
+
+    .encartelera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .encartelera .estrenos {
+        background-color: var(--tarjetacartelera);
+        width: 80%;
+        border-radius: 30px;
+    }
+    
+    .encartelera .no-estreno {
+        background-color: var(--tarjetacartelera);
+        width: 80%;
+        border-radius: 30px;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer section img{
+        max-width: 50px;
+    }
+    
+} 
+
+/*proximos estrenos*/
+
+.lista-proximos div{
+    display: flex;
+
+}
+
+.lista-proximos article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div article {
+    text-align: center;
+}
+div article .infoder{
+    text-align: center;
+}
+
+/*promociones*/
+
+/*2x1*/
+
+/*50off*/
+
+/*candy*/
+
+/*contacto*/
+.escribenos {
+    display: flex;
+    grid: center;
+}
