@@ -1,0 +1,143 @@
+/*cartelera*/
+.titulos {
+    margin: 50px 0px;
+
+}
+
+.encartelera {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .estrenos {
+        background-color: var(--tarjetacartelera);
+        width: 30%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .no-estreno {
+        background-color: var(--tarjetacartelera);
+        width: 30%;
+        border: 10%;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .encartelera {
+        display: flex;
+        justify-content: space-evenly;
+
+        .estrenos {
+            background-color: var(--tarjetacartelera);
+            width: 45%;
+            border: 10%;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 10px;
+        }
+
+        .no-estreno {
+            background-color: var(--tarjetacartelera);
+            width: 45%;
+            border: 10%;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .encartelera {
+        display: flex;
+        justify-content: space-evenly;
+
+        .estrenos {
+            background-color: var(--tarjetacartelera);
+            width: 45%;
+            border: 10%;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 10px;
+
+            img {
+                max-width: 160px;
+            }
+        }
+
+        .no-estreno {
+            background-color: var(--tarjetacartelera);
+            width: 45%;
+            border: 10%;
+            padding: 20px;
+            border-radius: 30px;
+            margin: 10px;
+
+            img {
+                max-width: 160px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+    }
+
+    nav ul {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px 15px 10px;
+    }
+
+    .encartelera {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .estrenos {
+            background-color: var(--tarjetacartelera);
+            width: 80%;
+            border-radius: 30px;
+
+            img {
+                max-width: 200px;
+            }
+        }
+
+        .no-estreno {
+            background-color: var(--tarjetacartelera);
+            width: 80%;
+            border-radius: 30px;
+
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+
+    footer section {
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            max-width: 50px;
+        }
+    }
+
+}

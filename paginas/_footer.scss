@@ -1,0 +1,12 @@
+footer {
+    nav .linkfooter {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--terciarycolor);
+    }
+    background-color: var(--terciarycolor);
+    color: var(--maintextcolor);
+    a {
+        color: var(--maintextcolor);
+    }
+}

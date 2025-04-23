@@ -1,0 +1,65 @@
+:root {
+    --maincolor: #CAF0F8;
+    --maintextcolor: #00B4D8;
+    --secondarycolor: #0096C7;
+    --terciarycolor: #03045E;
+    --tarjetacartelera: #90e0ef;
+}
+
+div .navbar-nav {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+
+    li {
+        background-color: white;
+    }
+}
+
+@import "../paginas/boton";
+
+body {
+    background-color: var(--maincolor);
+    text-align: center;
+}
+
+
+
+.carousel-inner {
+    width: auto;
+    height: auto;
+}
+
+div div div {
+    p {
+        color: whitesmoke;
+    }
+
+    h5 {
+        color: wheat;
+    }
+}
+
+
+.carousel-item {
+    text-align: center;
+}
+
+@import "../paginas/cartelera";
+
+@import "../paginas/proximos-estrenos";
+
+@import "../paginas/promociones";
+
+@import "../paginas/registro";
+
+/*contacto*/
+.escribenos {
+    display: flex;
+    grid: center;
+}
+
+@import "../paginas/footer";
+
+/*# sourceMappingURL=style.css.map */
