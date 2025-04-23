@@ -1,74 +1,78 @@
  /*promociones*/
  .promos section {
 
-  article img {
-    min-width: 200px;
-    max-width: 250px;
-  }
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-  
-    h2 {
-      font-size: 2.5cm;
-      color: black;
-    }
-  }
-  
-  
-  @media screen and (max-width: 768px) {
-    header {
-      background-color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 20px;
-    }
-    div section h2 {
-      font-size: 2cm;
-      color: black;
-    }
-  }
-  @media screen and (max-width: 425px) {
-    header {
-      background-color: black;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 20px;
-    }
-    div section h2 {
-      font-size: 1.5cm;
-      color: black;
-    }
-  }
-  /*2x1*/
-  .promos .a2x1 article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: double;
-    background-color: var(--maintextcolor);
-    color: var(--maincolor);
-  }
-  
-  /*50off*/
-  .promos .off article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: double;
-    background-color: var(--maintextcolor);
-    color: var(--maincolor);
-  }
-  
-  /*candy*/
-  .promos .promocandy article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-style: double;
-    background-color: var(--maintextcolor);
-    color: var(--maincolor);
-  }
-  
+   article img {
+     min-width: 200px;
+     max-width: 250px;
+   }
+
+   display: flex;
+   flex-direction: column;
+   padding-top: 50px;
+
+   h2 {
+     font-size: 2.5cm;
+     color: black;
+   }
+ }
+
+
+ @media screen and (max-width: 768px) {
+   header {
+     background-color: black;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 20px;
+   }
+
+   div section h2 {
+     font-size: 2cm;
+     color: black;
+   }
+ }
+
+ @media screen and (max-width: 425px) {
+   header {
+     background-color: black;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 20px;
+   }
+
+   div section h2 {
+     font-size: 1.5cm;
+     color: black;
+   }
+ }
+
+ /*2x1*/
+ .promos .a2x1 article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-style: double;
+   background-color: var(--maintextcolor);
+   color: var(--maincolor);
+ }
+
+ /*50off*/
+ .promos .off article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-style: double;
+   background-color: var(--maintextcolor);
+   color: var(--maincolor);
+ }
+
+ /*candy*/
+ .promos .promocandy article {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-style: double;
+   background-color: var(--maintextcolor);
+   color: var(--maincolor);
+ }

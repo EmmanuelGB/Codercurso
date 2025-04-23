@@ -348,11 +348,34 @@ div div div h5 {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+.registro .selsexo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.registro .infovital {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.registro .ultimopaso {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 /*contacto*/
 .escribenos {
   display: flex;
-  grid: center;
+  flex-direction: column;
+  align-items: center;
+}
+.escribenos textarea {
+  height: 200px;
+  margin-top: 15px;
 }
 
 footer {

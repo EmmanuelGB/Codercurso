@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,125 +11,129 @@
 
     <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
-    
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img width="100px" src="../imagenes/logocine.jpg" alt="logo cine"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/paginas/cartelera.html">Cartelera</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/paginas/proximos-estrenos.html">Proximos estrenos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/paginas/promociones.html">Promociones</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/paginas/ubicacion.html">Ubicacion</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/paginas/contactenos.html">Contactenos</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-                <a href="/paginas/registro.html">Registrate</a>
-            </span>
-          </div>
+            <a class="navbar-brand" href="../index.html"><img width="100px" src="../imagenes/logocine.jpg"
+                    alt="logo cine"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../paginas/cartelera.html">Cartelera</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/proximos-estrenos.html">Proximos estrenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/ubicacion.html">Ubicacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/contactenos.html">Contactenos</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="../paginas/registro.html">Registrate</a>
+                </span>
+            </div>
         </div>
-      </nav>
+    </nav>
     <main>
         <section>
             <h1>Registrese</h1>
 
-            <form class= "registro"action="">
+            <form class="registro" action="">
                 <section class="principal">
+                    
                     <label for="nombre">Ingrese su nombre:</label>
-                <input type="text" id="nombre" required>
+                    <input type="text" id="nombre" required>
 
-                <label for="apellido">Ingrese su apellido:</label>
-                <input type="text" id="apellido" required>
+                    <label for="apellido">Ingrese su apellido:</label>
+                    <input type="text" id="apellido" required>
 
-                <label for="fecha-de-nacimiento">Fecha de nacimiento:</label>
-                <input type="date" id="fecha-de-nacimiento" required>
+                    <label for="fecha-de-nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha-de-nacimiento" required>
 
-                <label for="documento">DNI:</label>
-                <input type="text" id="documento" required>
-            </section>
-            <section class="selsexo">
-            <h4>Sexo:</h4>
-                <label for="hombre">Hombre</label>
-                <input type="radio" name="genero" id="hombre">
+                    <label for="documento">DNI:</label>
+                    <input type="text" id="documento" required>
+                </section>
+                <section class="selsexo">
+                    <h4>Sexo:</h4>
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" id="hombre">
 
-                <label for="mujer">Mujer</label>
-                <input type="radio" name="genero" id="mujer">
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="genero" id="mujer">
 
-                <label for="indeterminado">Otro</label>
-                <input type="radio" name="genero" id="indeterminado" required>
-            </section>   
-            <section class="infovital">
-                <h4>¿Donde vives?</h4>
-                <label for="hogar">Seleccione Provincia</label>
-                <select name="hogar" id="hogar" required>
-                    <option value="">Buenos Aires</option>
-                    <option value="">Entre rios</option>
-                    <option value="">Corrientes</option>
-                    <option value="">Misiones</option>
-                    <option value="">Santa fe</option>
-                    <option value="">Cordoba</option>
-                    <option value="">La rioja</option>
-                    <option value="">Salta</option>
-                    <option value="">Jujuy</option>
-                    <option value="">Formosa</option>
-                    <option value="">Santiago del Estero</option>
-                    <option value="">Tucuman</option>
-                    <option value="">Tierra del Fuego</option>
-                    <option value="">La Pampa</option>
-                    <option value="">Neuquén</option>
-                    <option value="">Catamarca</option>
-                    <option value="">San Juan</option>
-                    <option value="">San Luis</option>
-                    <option value="">Chaco</option>
-                    <option value="">Chubut</option>
-                    <option value="">Rio negro</option>
-                    <option value="">Santa Cruz</option>
-                    <option value="">Mendoza</option>
-                </select>
+                    <label for="indeterminado">Otro</label>
+                    <input type="radio" name="genero" id="indeterminado" required>
+                </section>
+                <section class="infovital">
+                    <h4>¿Donde vives?</h4>
+                    <label for="hogar">Seleccione Provincia</label>
+                    <select name="hogar" id="hogar" required>
+                        <option value="">Buenos Aires</option>
+                        <option value="">Entre rios</option>
+                        <option value="">Corrientes</option>
+                        <option value="">Misiones</option>
+                        <option value="">Santa fe</option>
+                        <option value="">Cordoba</option>
+                        <option value="">La rioja</option>
+                        <option value="">Salta</option>
+                        <option value="">Jujuy</option>
+                        <option value="">Formosa</option>
+                        <option value="">Santiago del Estero</option>
+                        <option value="">Tucuman</option>
+                        <option value="">Tierra del Fuego</option>
+                        <option value="">La Pampa</option>
+                        <option value="">Neuquén</option>
+                        <option value="">Catamarca</option>
+                        <option value="">San Juan</option>
+                        <option value="">San Luis</option>
+                        <option value="">Chaco</option>
+                        <option value="">Chubut</option>
+                        <option value="">Rio negro</option>
+                        <option value="">Santa Cruz</option>
+                        <option value="">Mendoza</option>
+                    </select>
 
-                <label for="ciudad">Ciudad</label>
-                <input type="text" name="" id="ciudad" required>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="" id="ciudad" required>
 
-                <label for="postal">Codigo Postal</label>
-                <input type="number" name="" id="postal" required>
+                    <label for="postal">Codigo Postal</label>
+                    <input type="number" name="" id="postal" required>
 
-                <label for="direccion">Direccion</label>
-                <input type="text" name="" id="direccion" required>
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="" id="direccion" required>
 
-                <label for="piso">Piso</label>
-                <input type="number" name="" id="piso">
+                    <label for="piso">Piso</label>
+                    <input type="number" name="" id="piso">
 
-                <label for="departamento">Departamento</label>
-                <input type="text" name="" id="departamento">
-            </section>
-            <section class="ultimopaso">
-                <label for="correo">Ingrese su Mail:</label>
-                <input type="email" id="correo" required>
+                    <label for="departamento">Departamento</label>
+                    <input type="text" name="" id="departamento">
+                </section>
+                <section class="ultimopaso">
+                    <label for="correo">Ingrese su Mail:</label>
+                    <input type="email" id="correo" required>
 
-                <label for="contrasena">Ingerse su contraseña:</label>
-                <input type="password" id="contrasena" required>
+                    <label for="contrasena">Ingerse su contraseña:</label>
+                    <input type="password" id="contrasena" required>
 
-                <label for="verif-contrasena">verifique su contraseña:</label>
-                <input type="password" id="verif-contrasena" required>
-            </section>
+                    <label for="verif-contrasena">verifique su contraseña:</label>
+                    <input type="password" id="verif-contrasena" required>
+                </section>
 
                 <input type="submit">
             </form>
-          
+
         </section>
     </main>
 
@@ -138,17 +143,18 @@
             <nav>
                 <ul class="linkfooter">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="/paginas/cartelera.html">Cartelera</a></li>
-                    <li><a href="/paginas/proximos-estrenos.html">Proximos estrenos</a></li>
-                    <li><a href="/paginas/promociones.html">Promociones</a></li>
-                    <li><a href="/paginas/ubicacion.html">Ubicacion</a></li>
-                    <li><a href="/paginas/contactenos.html">Contactenos</a></li>
+                    <li><a href="../paginas/cartelera.html">Cartelera</a></li>
+                    <li><a href="../paginas/proximos-estrenos.html">Proximos estrenos</a></li>
+                    <li><a href="../paginas/promociones.html">Promociones</a></li>
+                    <li><a href="../paginas/ubicacion.html">Ubicacion</a></li>
+                    <li><a href="../paginas/contactenos.html">Contactenos</a></li>
 
                 </ul>
             </nav>
             <section>
                 <h5>Nuestras redes</h5>
-                <img src="../imagenes/fb.png" alt="icono facebook"><a href="https://facebook.com" target="_blank">Nuestro
+                <img src="../imagenes/fb.png" alt="icono facebook"><a href="https://facebook.com"
+                    target="_blank">Nuestro
                     facebook</a>
                 <img src="../imagenes/ig.png" alt="icono Instagram"><a href="https://instagram.com"
                     target="_blank">Nuestro Instagram</a>
@@ -164,6 +170,9 @@
         </fieldset>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
