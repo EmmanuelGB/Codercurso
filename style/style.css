@@ -13,7 +13,7 @@ div .navbar-nav {
   padding-right: 0px;
 }
 div .navbar-nav li {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.555);
 }
 
 * {
@@ -144,6 +144,9 @@ div div div h5 {
   border-radius: 30px;
   margin: 10px;
 }
+.encartelera .estrenos:hover {
+  filter: brightness(0.9);
+}
 .encartelera .no-estreno {
   background-color: var(--tarjetacartelera);
   width: 30%;
@@ -151,6 +154,9 @@ div div div h5 {
   padding: 20px;
   border-radius: 30px;
   margin: 10px;
+}
+.encartelera .no-estreno:hover {
+  filter: brightness(0.9);
 }
 
 @media screen and (max-width: 1024px) {
@@ -267,7 +273,7 @@ div div div h5 {
 }
 
 .promofondo {
-  background-color: rgb(251, 255, 240);
+  background-color: rgb(255, 255, 255);
 }
 .promofondo .titulo {
   text-decoration: underline;
@@ -411,7 +417,7 @@ div div div h5 {
 }
 .promos .promocandy .combobald:hover {
   transform: scale(1.3);
-  transform: rotate(-1turn);
+  transform: rotate(1turn);
 }
 .promos .promocandy article {
   display: grid;
@@ -455,6 +461,99 @@ div div div h5 {
   background-color: #0bffff;
 }
 
+@media screen and (max-width: 425px) {
+  .promos .a2x1 .imagenent {
+    height: 70px;
+    width: 70px;
+    transition: 2s all ease;
+  }
+  .promos .a2x1 .imagenent:hover {
+    transform: scale(1.4);
+  }
+  .promos .a2x1 article {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    grid-template-rows: 10% 0.5 1fr 10%;
+  }
+  .promos .a2x1 article h3 {
+    grid-column: 2/4;
+  }
+  .promos .a2x1 article .merimg {
+    grid-column: 2/4;
+    grid-row: 2;
+    height: 120px;
+    width: 250px;
+  }
+  .promos .a2x1 article .icbcimg {
+    grid-column: 2/4;
+    grid-row: 2;
+  }
+  .promos .a2x1 article .appimg {
+    grid-column: 2/4;
+    grid-row: 2;
+    height: 150px;
+  }
+  .promos .a2x1 article p {
+    grid-column: 2/4;
+    grid-row: 3;
+  }
+  .promos .a2x1 article h6 {
+    grid-column: 2/4;
+    grid-row: 4;
+    margin-bottom: 10px;
+  }
+  .promos .promocandy h2 {
+    font-size: medium;
+  }
+  .promos .promocandy .combomym {
+    height: 80px;
+    width: 100px;
+    transition: 2s all ease;
+  }
+  .promos .promocandy .combomym:hover {
+    transform: scale(1.3);
+    transform: rotate(1turn);
+  }
+  .promos .promocandy .combobald {
+    height: 80px;
+    width: 100px;
+    transition: 2s all ease;
+  }
+  .promos .promocandy .combobald:hover {
+    transform: scale(1.3);
+    transform: rotate(1turn);
+  }
+  .promos .promocandy article {
+    display: grid;
+    grid-template-columns: 10% 50% 1fr 10%;
+    grid-template-rows: 10% 0.5fr 0.5fr 10%;
+    justify-items: center;
+  }
+  .promos .promocandy article h3 {
+    grid-column: 2/4;
+  }
+  .promos .promocandy article .ypfimg {
+    grid-column: 2/4;
+    grid-row: 2;
+    height: 120px;
+    width: 250px;
+  }
+  .promos .promocandy article .tresseisimg {
+    grid-column: 2/4;
+    grid-row: 2;
+    width: 80%;
+    height: 80%;
+  }
+  .promos .promocandy article p {
+    grid-column: 2/4;
+    grid-row: 3;
+  }
+  .promos .promocandy article h6 {
+    grid-column: 2/4;
+    grid-row: 4;
+    margin-bottom: 10px;
+  }
+}
 .registro {
   display: flex;
   flex-direction: column;

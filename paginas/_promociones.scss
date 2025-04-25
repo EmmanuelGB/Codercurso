@@ -1,5 +1,5 @@
 .promofondo {
-  background-color: rgb(251, 255, 240);
+  background-color: rgb(255, 255, 255);
 
   .titulo {
     text-decoration: underline;
@@ -184,8 +184,7 @@
 
     .combobald:hover {
       transform: scale(1.3);
-      transform: rotate(-1turn);
-      ;
+      transform: rotate(1turn);
     }
 
     article {
@@ -239,7 +238,129 @@
       background-color: #0bffff;
     }
 
-  
 
+
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .promos {
+    .a2x1 {
+      .imagenent {
+        height: 70px;
+        width: 70px;
+        transition: 2s all ease;
+      }
+
+      .imagenent:hover {
+        transform: scale(1.4);
+
+      }
+
+      article {
+        display: grid;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-rows: 10% 0.5 1fr 10%;
+
+        h3 {
+          grid-column: 2/4;
+        }
+
+        .merimg {
+          grid-column: 2/4;
+          grid-row: 2;
+          height: 120px;
+          width: 250px;
+        }
+
+        .icbcimg {
+          grid-column: 2/4;
+          grid-row: 2;
+        }
+
+        .appimg {
+          grid-column: 2/4;
+          grid-row: 2;
+          height: 150px;
+        }
+
+        p {
+          grid-column: 2/4;
+          grid-row: 3;
+        }
+
+        h6 {
+          grid-column: 2/4;
+          grid-row: 4;
+          margin-bottom: 10px;
+        }
+
+      }
+    }
+
+    .promocandy {
+
+      h2 {
+        font-size: medium;
+      }
+
+      .combomym {
+        height: 80px;
+        width: 100px;
+        transition: 2s all ease;
+      }
+
+      .combomym:hover {
+        transform: scale(1.3);
+        transform: rotate(1turn);
+      }
+
+      .combobald {
+        height: 80px;
+        width: 100px;
+        transition: 2s all ease;
+      }
+
+      .combobald:hover {
+        transform: scale(1.3);
+        transform: rotate(1turn);
+      }
+
+      article {
+        display: grid;
+        grid-template-columns: 10% 50% 1fr 10%;
+        grid-template-rows: 10% 0.5fr 0.5fr 10%;
+        justify-items: center;
+        h3 {
+          grid-column: 2/4;
+        }
+
+        .ypfimg {
+          grid-column: 2/4;
+          grid-row: 2;
+          height: 120px;
+          width: 250px;
+        }
+
+        .tresseisimg {
+          grid-column: 2/4;
+          grid-row: 2;
+          width: 80%;
+          height: 80%;
+        }
+
+        p {
+          grid-column: 2/4;
+          grid-row: 3;
+        }
+
+        h6 {
+          grid-column: 2/4;
+          grid-row: 4;
+          margin-bottom: 10px;
+        }
+
+      }
+    }
   }
 }
