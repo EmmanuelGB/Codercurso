@@ -139,7 +139,7 @@ div div div h5 {
 .encartelera .estrenos {
   background-color: var(--tarjetacartelera);
   width: 30%;
-  border: 10%;
+  border: 1px solid black;
   padding: 20px;
   border-radius: 30px;
   margin: 10px;
@@ -147,7 +147,7 @@ div div div h5 {
 .encartelera .no-estreno {
   background-color: var(--tarjetacartelera);
   width: 30%;
-  border: 10%;
+  border: 1px solid black;
   padding: 20px;
   border-radius: 30px;
   margin: 10px;
@@ -266,75 +266,128 @@ div div div h5 {
   text-align: center;
 }
 
-/*promociones*/
-.promos section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
+.promofondo {
+  background-color: rgb(251, 255, 240);
 }
-.promos section article img {
-  min-width: 200px;
-  max-width: 250px;
-}
-.promos section h2 {
-  font-size: 2.5cm;
-  color: black;
+.promofondo .titulo {
+  text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  div section h2 {
-    font-size: 2cm;
-    color: black;
-  }
+.promos .a2x1 {
+  padding-bottom: 30px;
 }
-@media screen and (max-width: 425px) {
-  header {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  div section h2 {
-    font-size: 1.5cm;
-    color: black;
-  }
-}
-/*2x1*/
 .promos .a2x1 article {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 0.25fr;
+  justify-content: center;
   align-items: center;
-  border-style: double;
-  background-color: var(--maintextcolor);
-  color: var(--maincolor);
+  border: 1px solid black;
 }
-
-/*50off*/
+.promos .a2x1 article h3 {
+  grid-column: 2/4;
+}
+.promos .a2x1 article img {
+  grid-column: 1;
+  grid-row: 1/4;
+}
+.promos .a2x1 article p {
+  grid-column: 2/4;
+  grid-row: 2;
+  padding: 0px 25px 0px 25px;
+}
+.promos .a2x1 article img {
+  height: 175px;
+  width: 100%;
+}
+.promos .a2x1 article h6 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.promos .a2x1 .promer {
+  background-color: #daffff;
+}
+.promos .a2x1 .icbc {
+  background-color: #c3ffff;
+}
+.promos .a2x1 .app {
+  background-color: #a5ffff;
+}
+.promos .off {
+  padding-top: 25px;
+}
 .promos .off article {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr 0.75fr 1.25fr;
+  grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+  justify-content: center;
   align-items: center;
-  border-style: double;
-  background-color: var(--maintextcolor);
-  color: var(--maincolor);
+  border: 1px solid black;
 }
-
-/*candy*/
+.promos .off article h3 {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+.promos .off article img {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+.promos .off article p {
+  grid-column: 1/5;
+  grid-row: 3;
+  padding: 0px 0px 0px 0px;
+}
+.promos .off article img {
+  height: 100%;
+  width: 100%;
+  justify-items: center;
+}
+.promos .off article h6 {
+  grid-column: 2/4;
+  grid-row: 4;
+}
+.promos .off .galic {
+  background-color: #7affff;
+}
+.promos .off .carre {
+  background-color: #4fffff;
+}
+.promos .promocandy {
+  padding-top: 25px;
+}
 .promos .promocandy article {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 25% 0.25fr 0.25fr;
+  justify-content: center;
   align-items: center;
-  border-style: double;
-  background-color: var(--maintextcolor);
-  color: var(--maincolor);
+  border: 1px solid black;
+}
+.promos .promocandy article h3 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+.promos .promocandy article img {
+  grid-column: 4;
+  grid-row: 1/5;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+.promos .promocandy article p {
+  grid-column: 2/4;
+  grid-row: 2;
+  padding: 0px 0px 0px 0px;
+}
+.promos .promocandy article h6 {
+  grid-column: 2/4;
+  grid-row: 3;
+}
+.promos .promocandy .servic {
+  background-color: #2dffff;
+}
+.promos .promocandy .tresseis {
+  background-color: #19ffff;
 }
 
 .registro {
