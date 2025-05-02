@@ -6,14 +6,31 @@
   --tarjetacartelera: #90e0ef;
 }
 
+body {
+  background-color: var(--maincolor);
+  text-align: center;
+}
+
 div .navbar-nav {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-bottom: 0px;
-  padding-right: 0px;
+  height: auto;
+  width: auto;
 }
 div .navbar-nav li {
   background-color: rgb(255, 255, 255);
+}
+
+.carousel-inner {
+  width: auto;
+  height: auto;
+}
+.carousel-inner .carousel-item {
+  text-align: center;
+}
+.carousel-inner div p {
+  color: whitesmoke;
+}
+.carousel-inner div h5 {
+  color: wheat;
 }
 
 .encartelera a {
@@ -32,27 +49,6 @@ div .navbar-nav li {
   background-color: white;
   color: black;
   transform: scaleX(1);
-}
-
-body {
-  background-color: var(--maincolor);
-  text-align: center;
-}
-
-.carousel-inner {
-  width: auto;
-  height: auto;
-}
-
-div div div p {
-  color: whitesmoke;
-}
-div div div h5 {
-  color: wheat;
-}
-
-.carousel-item {
-  text-align: center;
 }
 
 /*cartelera*/
@@ -216,23 +212,23 @@ div div div h5 {
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  .mainestrenos {
     display: flex;
     flex-direction: column;
   }
-  main div {
+  .mainestrenos div {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
   }
-  main div h3 {
+  .mainestrenos div h3 {
     font-size: 30px;
   }
-  main div img {
+  .mainestrenos div img {
     margin-bottom: 30px;
   }
-  main div p {
+  .mainestrenos div p {
     margin: 0px 10px 0px 10px;
   }
 }
