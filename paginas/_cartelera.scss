@@ -10,6 +10,10 @@
     flex-wrap: wrap;
 
     .estrenos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: var(--tarjetacartelera);
         width: 30%;
         border: 1px solid black;
@@ -17,12 +21,21 @@
         border-radius: 30px;
         margin: 10px;
 
+        img {
+            width: 250px;
+
+        }
     }
-    .estrenos:hover{
+
+    .estrenos:hover {
         filter: brightness(0.9);
     }
 
     .no-estreno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         background-color: var(--tarjetacartelera);
         width: 30%;
         border: 1px solid black;
@@ -30,7 +43,8 @@
         border-radius: 30px;
         margin: 10px;
     }
-    .no-estreno:hover{
+
+    .no-estreno:hover {
         filter: brightness(0.9);
     }
 }

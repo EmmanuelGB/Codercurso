@@ -13,96 +13,25 @@ div .navbar-nav {
   padding-right: 0px;
 }
 div .navbar-nav li {
-  background-color: rgba(255, 255, 255, 0.555);
+  background-color: rgb(255, 255, 255);
 }
 
-* {
-  list-style: none;
+.encartelera a {
+  text-decoration: none;
 }
-
-nav ul {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  padding: 0px 0px 0px 0px;
-}
-nav ul a {
-  color: var(--maintextcolor);
-}
-nav ul .boton1 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
+.encartelera .boton1 {
+  margin-top: 10px;
+  width: 50%;
+  background-color: rgb(40, 151, 170);
   color: #CAF0F8;
   padding: 15px 10px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
 }
-nav ul .boton1:hover {
+.encartelera .boton1:hover {
   background-color: white;
   color: black;
   transform: scaleX(1);
-}
-nav ul .boton2 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
-  color: #CAF0F8;
-  padding: 15px 10px;
-  border-radius: 15px;
-  transition: all 0.5s ease-in-out;
-}
-nav ul .boton2:hover {
-  background-color: rgba(255, 255, 255, 0.856);
-  color: black;
-  transform: scaleX(1);
-}
-nav ul .boton3 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
-  color: #CAF0F8;
-  padding: 15px 10px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-nav ul .boton3:hover {
-  background-color: rgba(255, 255, 255, 0.781);
-  color: black;
-}
-nav ul .boton4 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
-  color: #CAF0F8;
-  padding: 15px 10px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-nav ul .boton4:hover {
-  background-color: rgba(255, 255, 255, 0.658);
-  color: black;
-}
-nav ul .boton5 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
-  color: #CAF0F8;
-  padding: 15px 10px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-nav ul .boton5:hover {
-  background-color: rgba(255, 255, 255, 0.514);
-  color: black;
-}
-nav ul .boton6 {
-  width: 16%;
-  background-color: rgb(255, 255, 255);
-  color: #CAF0F8;
-  padding: 15px 10px;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-nav ul .boton6:hover {
-  background-color: rgba(255, 255, 255, 0.425);
-  color: rgb(255, 255, 255);
 }
 
 body {
@@ -137,6 +66,10 @@ div div div h5 {
   flex-wrap: wrap;
 }
 .encartelera .estrenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--tarjetacartelera);
   width: 30%;
   border: 1px solid black;
@@ -144,10 +77,17 @@ div div div h5 {
   border-radius: 30px;
   margin: 10px;
 }
+.encartelera .estrenos img {
+  width: 250px;
+}
 .encartelera .estrenos:hover {
   filter: brightness(0.9);
 }
 .encartelera .no-estreno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--tarjetacartelera);
   width: 30%;
   border: 1px solid black;
@@ -267,11 +207,35 @@ div div div h5 {
   justify-content: center;
   text-align: center;
 }
+.lista-proximos div h3:hover {
+  text-decoration: underline 1px;
+}
 .lista-proximos div .infoders {
   height: 100%;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  main div h3 {
+    font-size: 30px;
+  }
+  main div img {
+    margin-bottom: 30px;
+  }
+  main div p {
+    margin: 0px 10px 0px 10px;
+  }
+}
 .promofondo {
   background-color: rgb(255, 255, 255);
 }
@@ -584,6 +548,12 @@ div div div h5 {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  section .ubi iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*contacto*/
 .escribenos {
   display: flex;
@@ -603,9 +573,12 @@ footer nav .linkfooter {
   display: flex;
   flex-direction: column;
   background-color: var(--terciarycolor);
+  list-style-type: none;
 }
 footer a {
   color: var(--maintextcolor);
+  text-decoration: none;
+  list-style: none;
 }
 
 

@@ -3,10 +3,13 @@ footer {
         display: flex;
         flex-direction: column;
         background-color: var(--terciarycolor);
+        list-style-type: none;
     }
     background-color: var(--terciarycolor);
     color: var(--maintextcolor);
     a {
-        color: var(--maintextcolor);
+        color: var(--maintextcolor);   
+        text-decoration: none;
+        list-style: none;
     }
 }
