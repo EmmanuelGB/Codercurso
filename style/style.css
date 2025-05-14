@@ -196,6 +196,9 @@ div .navbar-nav li {
 }
 .lista-proximos div {
   display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20px;
 }
 .lista-proximos div img {
   max-width: 250px;
@@ -233,16 +236,24 @@ div .navbar-nav li {
     margin-bottom: 30px;
   }
   .mainestrenos div p {
-    margin: 0px 10px 0px 10px;
+    margin: 0px 15px 0px 15px;
   }
 }
 .promofondo {
-  background-color: rgb(255, 255, 255);
+  background-image: url(/imagenes/entradacomplejo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 10%;
 }
 .promofondo .titulo {
   text-decoration: underline;
 }
 
+.promos {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .promos h2 {
   font-size: 35px;
 }
@@ -262,6 +273,7 @@ div .navbar-nav li {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.25fr 1fr 0.75fr;
   justify-items: center;
+  padding-top: 5%;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
@@ -274,18 +286,21 @@ div .navbar-nav li {
   grid-row: 1/4;
   height: 60%;
   width: 90%;
+  object-fit: contain;
 }
 .promos .a2x1 article .icbcimg {
   grid-column: 1;
   grid-row: 1/4;
   height: 80px;
   width: 80%;
+  object-fit: contain;
 }
 .promos .a2x1 article .appimg {
   grid-column: 1;
   grid-row: 1/4;
   height: 60%;
   width: 60%;
+  object-fit: contain;
 }
 .promos .a2x1 article p {
   grid-column: 2/4;
@@ -299,13 +314,13 @@ div .navbar-nav li {
   margin-bottom: 0px;
 }
 .promos .a2x1 .promer {
-  background-color: #daffff;
+  background-color: #CAF0F8;
 }
 .promos .a2x1 .icbc {
-  background-color: #c3ffff;
+  background-color: #CAF0F8;
 }
 .promos .a2x1 .app {
-  background-color: #a5ffff;
+  background-color: #CAF0F8;
 }
 .promos .off {
   padding-top: 25px;
@@ -337,6 +352,7 @@ div .navbar-nav li {
   grid-row: 1;
   height: 100px;
   width: 200px;
+  object-fit: contain;
 }
 .promos .off article .carreimg {
   grid-column: 2/4;
@@ -344,6 +360,7 @@ div .navbar-nav li {
   height: 150px;
   width: 200px;
   justify-items: center;
+  object-fit: contain;
 }
 .promos .off article p {
   grid-column: 1/5;
@@ -355,10 +372,10 @@ div .navbar-nav li {
   grid-row: 4;
 }
 .promos .off .galic {
-  background-color: #84ffff;
+  background-color: #CAF0F8;
 }
 .promos .off .carre {
-  background-color: #64ffff;
+  background-color: #CAF0F8;
 }
 .promos .promocandy {
   padding-top: 25px;
@@ -401,6 +418,7 @@ div .navbar-nav li {
   justify-items: center;
   height: 80%;
   width: 80%;
+  object-fit: contain;
 }
 .promos .promocandy article .tresseisimg {
   grid-column: 4;
@@ -408,6 +426,7 @@ div .navbar-nav li {
   justify-items: center;
   height: 60%;
   width: 80%;
+  object-fit: contain;
 }
 .promos .promocandy article p {
   grid-column: 2/4;
@@ -419,13 +438,13 @@ div .navbar-nav li {
   grid-row: 3;
 }
 .promos .promocandy .servic {
-  background-color: #2dffff;
+  background-color: #CAF0F8;
 }
 .promos .promocandy .tresseis {
-  background-color: #0bffff;
+  background-color: #CAF0F8;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .promos .a2x1 .imagenent {
     height: 70px;
     width: 70px;
@@ -548,10 +567,61 @@ div .navbar-nav li {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
-  section .ubi iframe {
-    width: 100%;
-    height: 100%;
+.contenedorubi {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.25fr;
+  grid-template-rows: 1fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+  justify-items: start;
+}
+.contenedorubi h1 {
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.contenedorubi iframe {
+  padding-left: 10%;
+  grid-column: 1;
+  grid-row: 2/7;
+  width: 100%;
+  height: 100%;
+}
+.contenedorubi h3 {
+  grid-column: 2/5;
+  grid-row: 2;
+  padding-left: 10px;
+}
+.contenedorubi .h41 {
+  grid-column: 2/5;
+  grid-row: 3;
+  padding-left: 10px;
+}
+.contenedorubi .h42 {
+  grid-column: 2/5;
+  grid-row: 4;
+  padding-left: 10px;
+}
+.contenedorubi .h43 {
+  grid-column: 2/5;
+  grid-row: 5;
+  padding-left: 10px;
+}
+.contenedorubi h5 {
+  grid-column: 2/5;
+  grid-row: 6;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .contenedorubi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorubi iframe {
+    width: 50%;
+    height: 50%;
+    padding: 10px 10px 10px 10px;
   }
 }
 /*contacto*/
@@ -565,20 +635,51 @@ div .navbar-nav li {
   margin-top: 15px;
 }
 
-footer {
+footer fieldset {
+  padding: 0px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15% 0.25fr 0.75fr 10%;
   background-color: var(--terciarycolor);
   color: var(--maintextcolor);
 }
-footer nav .linkfooter {
+footer fieldset nav {
+  grid-column: 1;
+  grid-row: 2/5;
+}
+footer fieldset nav .linkfooter {
   display: flex;
   flex-direction: column;
   background-color: var(--terciarycolor);
   list-style-type: none;
+  padding: 1% 1% 1% 1%;
 }
-footer a {
+footer fieldset section {
+  grid-column: 5;
+  grid-row: 2;
+}
+footer fieldset h4 {
+  grid-column: 1/6;
+  grid-row: 1;
+}
+footer fieldset h5 {
+  grid-column: 2/5;
+  grid-row: 2;
+}
+footer fieldset span {
+  grid-column: 4/6;
+  grid-row: 4;
+}
+footer fieldset a {
   color: var(--maintextcolor);
   text-decoration: none;
   list-style: none;
+}
+@media screen and (max-width: 900px) {
+  footer fieldset {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 
