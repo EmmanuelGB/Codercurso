@@ -149,7 +149,7 @@ div .navbar-nav li {
     max-width: 160px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
   header {
     background-color: black;
     display: flex;
