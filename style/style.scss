@@ -44,17 +44,17 @@ div .navbar-nav {
 }
 }
 
-@import "../paginas/boton";
+@import "./boton";
 
-@import "../paginas/cartelera";
+@import "./cartelera";
 
-@import "../paginas/proximos-estrenos";
+@import "./proximos-estrenos";
 
-@import "../paginas/promociones";
+@import "./promociones";
 
-@import "../paginas/registro";
+@import "./registro";
  
-@import "../paginas/ubicacion";
+@import "./ubicacion";
 
 /*contacto*/
 .escribenos {
@@ -67,6 +67,6 @@ div .navbar-nav {
     }
 }
 
-@import "../paginas/footer";
+@import "./footer";
 
 /*# sourceMappingURL=style.css.map */
