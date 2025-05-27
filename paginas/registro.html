@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../paginas/cartelera.html">Cartelera</a>
@@ -48,38 +48,47 @@
             </div>
         </div>
     </nav>
-    <main>
+    <main class="menuregistro">
         <section>
             <h1>Regístrese</h1>
 
             <form class="registro" action="">
+   
                 <section class="principal">
+                
+                        <legend>Datos Personales:</legend>
+                        <label for="nombre">Ingrese su nombre:</label>
+                        <input type="text" id="nombre" required>
 
-                    <label for="nombre">Ingrese su nombre:</label>
-                    <input type="text" id="nombre" required>
+                        <label for="apellido">Ingrese su apellido:</label>
+                        <input type="text" id="apellido" required>
 
-                    <label for="apellido">Ingrese su apellido:</label>
-                    <input type="text" id="apellido" required>
+                        <label for="fecha-de-nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha-de-nacimiento" required>
 
-                    <label for="fecha-de-nacimiento">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha-de-nacimiento" required>
+                        <label for="documento">DNI:</label>
+                        <input type="text" id="documento" required>
 
-                    <label for="documento">DNI:</label>
-                    <input type="text" id="documento" required>
-                </section>
-                <section class="selsexo">
-                    <h4>Sexo:</h4>
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" name="genero" id="hombre">
+                     
+                 </section>
+                
+                 <section class="selsexo">
+                    <fieldset>
+                        <legend>Sexo:</legend>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="genero" id="hombre">
 
-                    <label for="mujer">Mujer</label>
-                    <input type="radio" name="genero" id="mujer">
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" name="genero" id="mujer">
 
-                    <label for="indeterminado">Otro</label>
-                    <input type="radio" name="genero" id="indeterminado" required>
-                </section>
+                        <label for="indeterminado">Otro</label>
+                        <input type="radio" name="genero" id="indeterminado" required>
+                   </fieldset>
+                    </section>
+
                 <section class="infovital">
-                    <h4>¿Donde vives?</h4>
+                  
+                    <legend>¿Donde vives?</legend>
                     <label for="hogar">Seleccione Provincia</label>
                     <select name="hogar" id="hogar" required>
                         <option value="">Buenos Aires</option>
@@ -121,6 +130,7 @@
 
                     <label for="departamento">Departamento</label>
                     <input type="text" name="" id="departamento">
+                
                 </section>
                 <section class="ultimopaso">
                     <label for="correo">Ingrese su Mail:</label>
@@ -132,8 +142,9 @@
                     <label for="verif-contrasena">verifique su contraseña:</label>
                     <input type="password" id="verif-contrasena" required>
                 </section>
-
+<div class="enviar">
                 <input type="submit">
+                </div>
             </form>
 
         </section>

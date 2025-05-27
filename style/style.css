@@ -537,34 +537,85 @@ div .navbar-nav li {
     margin-bottom: 10px;
   }
 }
-.registro {
-  display: flex;
-  flex-direction: column;
+.menuregistro {
+  background-image: url(../imagenes/entradacomplejo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.menuregistro .registro {
+  display: grid;
+  grid-template-columns: 10% 2fr 0.25fr 2fr 10%;
+  grid-row: 1fr 1fr 1fr;
   align-items: center;
 }
-.registro .principal {
+.menuregistro .registro .principal {
+  grid-column: 2;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 1px solid black;
+  padding: 15px 50px;
+  background-color: #fdf5f5;
 }
-.registro .selsexo {
+.menuregistro .registro .selsexo {
+  grid-column: 4;
+  grid-row: 1;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 1px solid black;
+  padding: 15px 30px;
+  background-color: #fdf5f5;
 }
-.registro .infovital {
+.menuregistro .registro .infovital {
+  grid-column: 4;
+  grid-row: 3;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 1px solid black;
+  padding: 15px 50px;
+  background-color: #fdf5f5;
 }
-.registro .ultimopaso {
+.menuregistro .registro .ultimopaso {
+  grid-column: 2;
+  grid-row: 3;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
   margin-bottom: 30px;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid black;
+  padding: 25px 25px;
+  background-color: #fdf5f5;
+}
+.menuregistro .registro .enviar {
+  grid-column: 2/5;
+  grid-row: 4;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .contenedorubi {
