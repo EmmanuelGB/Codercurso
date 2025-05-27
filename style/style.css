@@ -617,6 +617,36 @@ div .navbar-nav li {
   margin-top: 20px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 910px) {
+  .menuregistro .registro {
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .menuregistro .registro .principal {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .menuregistro .registro .selsexo {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 20px;
+  }
+  .menuregistro .registro .infovital {
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 20px;
+  }
+  .menuregistro .registro .ultimopaso {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .menuregistro .registro .enviar {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
 
 .contenedorubi {
   display: grid;
